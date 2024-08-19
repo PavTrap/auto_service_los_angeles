@@ -1,0 +1,137 @@
+.header {
+  outline: 1px solid red;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0, 0, 0);
+}
+.container {
+  padding: 0 20px;
+  outline: 1px solid red;
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.container-flex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+.contacts-phone {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* html,
+body {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+#one {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  position: absolute;
+  transition: 1s;
+}
+#two {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  position: absolute;
+  transition: 1s;
+}
+
+#exampleBOX {
+  width: 650px;
+  height: 1500px;
+  margin: 0px auto 0px auto;
+  position: relative;
+}
+
+#exampleDIV {
+  width: 100%;
+  height: 36%;
+  color: #fff;
+  background: rgba(0, 39, 255, 0.5);
+  padding: 5px;
+  position: absolute;
+  margin: 70px auto 0px auto;
+  text-align: center;
+  font-family: comic sans ms;
+  letter-spacing: 8px;
+  line-height: 500px;
+  font-size: 75px;
+  border-radius: 40px;
+  border: 3px solid #fff;
+} */
+
+
+
+/*  */
+
+
+.slideshow, .slide {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+ }
+ .slideshow {
+	position: relative;
+	z-index: -1;
+ }
+ .slide {
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	animation: slideShow 12s infinite;
+	opacity: 0;
+ }
+  
+ .slide:nth-child(1) {
+	background-image: url('./contents/photo/1.jpg');
+	/* animation-delay: 0s; */
+ }
+
+ .slide:nth-child(2) {
+	background-image: url('./contents/photo/2.jpg');
+	/* animation-delay: 1s; */
+ }
+  
+ .slide:nth-child(3) {
+	background-image: url('./contents/photo/3.jpg');
+	/* animation-delay: 2s; */
+ }
+  
+ @keyframes slideShow {
+	0% {opacity: 1}
+	/* 2% {opacity: 1}
+	98%{opacity: 1} */
+	100% {opacity: 1}
+ }
+
+ .content {
+	position: absolute;
+	z-index: 1;
+	/* Здесь можно добавить стили для основного контента сайта */
+ }
